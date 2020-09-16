@@ -68,11 +68,11 @@ a {
 	color: #093a58;
 }
 
-.name a,
+/* .name a,
 .main-nav a {
   padding: 0 15px;
   display: block;
-}
+} */
 
 /* ---- Layout Containers ---- */
 
@@ -82,7 +82,7 @@ a {
 }
 
 .main-header {
-	text-align: center;
+	/* text-align: center; */
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: #3acec2;
@@ -99,7 +99,7 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
 
 	.wrap {
 		min-height: calc(100vh - 89px);
@@ -115,14 +115,33 @@ a {
 		float: right;
 	}
 
+	.name,
 	.main-nav li {
 		float: left;
+	}
+
+	.main-nav li {
 		margin-left: 12px;
 	}
 
-	.name {
-		float: left;
+
+	/* ---- Columns ---- */
+
+	.col {
+	  float: left;
+	  padding-left: 1em;
+	  padding-right: 1em;
 	}
+
+	.primary {
+	  width: 40%;
+	}
+
+	.secondary {
+	  width: 60%;
+	}
+
+	/* -------- */
 
   .feat-img {
 		width: 300px;
