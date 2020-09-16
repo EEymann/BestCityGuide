@@ -50,6 +50,14 @@ a {
 	margin-bottom: 6px;
 }
 
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+
 .main-nav a {
 	font-size: .95em;
 	color: #3acec2;
@@ -74,6 +82,7 @@ a {
 }
 
 .main-header {
+	text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: #3acec2;
@@ -101,14 +110,23 @@ a {
 		max-width: 1150px;
 		margin: 0 auto;
 	}
-  .name,
-  .main-nav,
-  .main-nav li {
-    display: inline-block;
-  }
-  .name {
-    width: 240px;
-    margin-right: 50px;
 
-  }
+  .feat-img {
+		width: 300px;
+	}
+
+
+	.name,
+
+	.main-nav li {
+	    display: inline-block;
+
+	  }
+
+	.name {
+		width: 240px;
+	}
+
+
+
 }
