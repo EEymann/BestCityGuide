@@ -1,74 +1,99 @@
-/* ==========================================================================
-    Base Element Styles
-   ========================================================================== */
+/* =================================
+  Base Styles
+==================================== */
+
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  line-height: 1.6;
-  color: #3a3a3a;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
 }
 
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
 
 a {
-  color: #fff;
-  text-decoration: none;
+	text-decoration: none;
 }
 
-
-
-/* ==========================================================================
-    Base Layout Styles
-   ========================================================================== */
+/* =================================
+  Base Layout Styles
+==================================== */
 
 /* ---- Navigation ---- */
 
 .name {
-  margin: 0;
+	font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
 }
 
 /* ---- Layout Containers ---- */
 
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .main-header {
-  background: #3acec2;
-  padding: 1em 0;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: #3acec2;
+	margin-bottom: 30px;
 }
 
 .main-footer {
-  text-align: center;
-  padding: 2em 0;
-  background: #d9e4ea;
-
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
 }
 
-/* ---- Page Elements ---- */
-
-
-/* ==========================================================================
-    Media Queries
-   ========================================================================== */
+/* =================================
+  Media Queries
+==================================== */
 
 @media (min-width: 769px) {
 
-/** vh is a viewport relative unit, it stands for viewport height because it allows sizing purely based on the height of the browser viewport.
- 1 vh = 1% of the height of the viewport. So 100vh means min-height will be 100% of the viewport height.
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
 
-calc(100vh - 89px) subtracts 89px from 100vh. The result of this calc expression is going to be used as the value for min-height. This is calculating 100% of the viewport
-height minus the footer height. So the footer will always stick to the bottom of the page no matter how little content there is on the page.
-  **/
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
 
-  .wrap {
-    min-height: calc(100vh - 89px);
-  }
-  .container {
-  width: 70%;
-  max-width: 1000px;
-  margin: 0 auto;
-  }
 }
