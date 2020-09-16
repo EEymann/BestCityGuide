@@ -44,6 +44,7 @@ a {
   text-align: center;
   padding: 2em 0;
   background: #d9e4ea;
+
 }
 
 /* ---- Page Elements ---- */
@@ -54,6 +55,17 @@ a {
    ========================================================================== */
 
 @media (min-width: 769px) {
+
+/** vh is a viewport relative unit, it stands for viewport height because it allows sizing purely based on the height of the browser viewport.
+ 1 vh = 1% of the height of the viewport. So 100vh means min-height will be 100% of the viewport height.
+
+calc(100vh - 89px) subtracts 89px from 100vh. The result of this calc expression is going to be used as the value for min-height. This is calculating 100% of the viewport
+height minus the footer height. So the footer will always stick to the bottom of the page no matter how little content there is on the page.
+  **/
+
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
   .container {
   width: 70%;
   max-width: 1000px;
